@@ -10,6 +10,10 @@ Feel free to fork and imporove this script on github i will be happy to accept a
 https://github.com/RobinBreman/WMEFeedSorter
 
 ## Version history
+
+### 0.0.4
+- Added github link to code //description
+
 ### 0.0.3
 - Set Greasyfork syncing from github
 

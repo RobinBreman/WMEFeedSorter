@@ -2,19 +2,19 @@
 // @name 			WME Feed Sorter
 // @description 	Alpha version, sorts the WME feed
 // @namespace 		http://tampermonkey.net/
-// @author          Robin Breman | L4 Waze NL | @robbre
+// @author          Robin Breman | L4 Waze NL | @robbre | https://github.com/RobinBreman/WMEFeedSorter
 // @include 	   /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @include         https://editor-beta.waze.com/*
 // @include         https://beta.waze.com/*
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
 // @grant 			none
-// @version 		0.0.3
+// @version 		0.0.4
 // ==/UserScript==
 
 (function () {
     'use strict';
-    var version = '0.0.3';
+    var version = '0.0.4';
 
     function wmescript_bootstrap() {
         var wazeapi = W || window.W;
