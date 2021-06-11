@@ -9,12 +9,12 @@
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
 // @grant 			none
-// @version 		0.0.4
+// @version 		0.0.5
 // ==/UserScript==
 
 (function () {
     'use strict';
-    var version = '0.0.4';
+    var version = '0.0.5';
 
     function wmescript_bootstrap() {
         var wazeapi = W || window.W;
@@ -38,7 +38,8 @@
         </div>`
         );
 
-        $('.feed-content').parent().prepend(cnt);
+        //$('.feed-content').parent().prepend(cnt);
+        $('#sidepanel-feed').prepend(cnt);
 
         $('#WMECustomFeedSorterUp').click(sortlistASC);
         $('#WMECustomFeedSorterDwn').click(sortlistDESC);
