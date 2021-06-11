@@ -62,7 +62,7 @@
             keyA = keyA.replace('minuut', '');
             keyA = keyA.replace(' ', '');
             keyA = parseInt(keyA);
-            console.log(keyA);
+            //console.log(keyA);
 
             var keyB = $('.timestamp', b).text();
             keyB = keyB.replace('maand', '00000');
