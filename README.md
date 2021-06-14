@@ -9,24 +9,16 @@ Feel free to fork and imporove this script on github i will be happy to accept a
 
 https://github.com/RobinBreman/WMEFeedSorter
 
-## Version history
-
-### 0.1.0
-- Added support for EN
-### 0.0.5
-- Fixed double button row
-
-### 0.0.4
-- Added github link to code //description
-
-### 0.0.3
-- Set Greasyfork syncing from github
-
-### 0.0.2
-- Added month support
-
-### 0.0.1
-- Initial version
+## Changelog
+|Version||
+|---|---| 
+0.1.1 | Supporting years for really old UR's :(
+0.1.0 | Added support for EN
+0.0.5 | Fixed double button row
+0.0.4 | Added github link to code //description
+0.0.3 | Set Greasyfork syncing from github
+0.0.2 | Added month support
+0.0.1 | Initial version
 
 ## About me
 This script is developed by Robin Breman (@robbre), L4 editor Waze NL.

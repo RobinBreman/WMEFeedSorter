@@ -9,12 +9,12 @@
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
 // @grant 			none
-// @version 		0.1.0
+// @version 		0.1.1
 // ==/UserScript==
 
 (function () {
     'use strict';
-    var version = '0.1.0';
+    var version = '0.1.1';
 
     function wmescript_bootstrap() {
         var wazeapi = W || window.W;
@@ -56,17 +56,20 @@
         items.sort(function (a, b) {
             var keyA = $('.timestamp', a).text();
 
+            keyA = keyA.replace('jaar', '0000000');
+            keyA = keyA.replace('year', '0000000');
+
             keyA = keyA.replace('maanden', '00000');
             keyA = keyA.replace('months', '00000');
-            
+
             keyA = keyA.replace('maand', '00000');
             keyA = keyA.replace('month', '00000');
-            
+
             keyA = keyA.replace('dagen', '0000');
             keyA = keyA.replace('dag', '0000');
             keyA = keyA.replace('days', '0000');
             keyA = keyA.replace('day', '0000');
-            
+
             keyA = keyA.replace('uur', '00');
             keyA = keyA.replace('hours', '00');
             keyA = keyA.replace('hour', '00');
@@ -81,12 +84,17 @@
             //console.log(keyA);
 
             var keyB = $('.timestamp', b).text();
+
+            keyB = keyB.replace('jaar', '0000000');
+            keyB = keyB.replace('year', '0000000');
+
+
             keyB = keyB.replace('maanden', '00000');
             keyB = keyB.replace('months', '00000');
 
             keyB = keyB.replace('maand', '00000');
             keyB = keyB.replace('month', '00000');
-            
+
             keyB = keyB.replace('dagen', '0000');
             keyB = keyB.replace('dag', '0000');
             keyB = keyB.replace('days', '0000');
