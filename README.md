@@ -5,7 +5,7 @@ This script will add 2 buttons on top of the WME feed section that allows you to
 * For now this script will only work for when your language is set to Dutch or English
 
 ## Code
-Feel free to fork and imporove this script on github i will be happy to accept any pull-requests.
+Feel free to fork and improve this script i will be happy to accept any pull-requests.
 
 https://github.com/RobinBreman/WMEFeedSorter
 
