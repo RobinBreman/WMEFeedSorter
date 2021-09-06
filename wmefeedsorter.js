@@ -9,12 +9,12 @@
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
 // @grant 			none
-// @version 		0.1.1
+// @version 		0.1.2
 // ==/UserScript==
 
 (function () {
     'use strict';
-    var version = '0.1.1';
+    var version = '0.1.2';
 
     function wmescript_bootstrap() {
         var wazeapi = W || window.W;
@@ -65,6 +65,8 @@
             keyA = keyA.replace('maand', '00000');
             keyA = keyA.replace('month', '00000');
 
+            keyA = keyA.replace('mnd', '00000');
+
             keyA = keyA.replace('dagen', '0000');
             keyA = keyA.replace('dag', '0000');
             keyA = keyA.replace('days', '0000');
@@ -94,6 +96,8 @@
 
             keyB = keyB.replace('maand', '00000');
             keyB = keyB.replace('month', '00000');
+
+            keyB = keyB.replace('mnd', '00000');
 
             keyB = keyB.replace('dagen', '0000');
             keyB = keyB.replace('dag', '0000');
