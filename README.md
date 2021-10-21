@@ -2,7 +2,7 @@
 
 This script will add 2 buttons on top of the WME feed section that allows you to order the feed chronological
 
-* For now this script will only work for when your language is set to Dutch or English
+* For now this script will only work for when your language is set to Dutch or English.
 
 ## Code
 Feel free to fork and improve this script I will be happy to accept any pull-requests.
