@@ -9,7 +9,7 @@
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
 // @grant 			none
-// @version 		0.1.2
+// @version 		0.1.3
 // ==/UserScript==
 
 (function () {
@@ -32,8 +32,8 @@
         var cnt = $(`
         <div  id='WMECustomFeedSorter'>
             <span>
-                <button id='WMECustomFeedSorterUp'>+</button>
-                <button id='WMECustomFeedSorterDwn'>-</button>
+                <button id='WMECustomFeedSorterUp'>🔼</button>
+                <button id='WMECustomFeedSorterDwn'>🔽</button>
             </span>
         </div>`
         );
