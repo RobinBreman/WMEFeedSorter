@@ -32,8 +32,12 @@
         var cnt = $(`
         <div  id='WMECustomFeedSorter'>
             <span>
+
                 <button id='WMECustomFeedSorterUp'>🔼</button>
                 <button id='WMECustomFeedSorterDwn'>🔽</button>
+
+                <input type='checkbox' id='WMECustomFeedSorterForceLoadAll'>Always load all</input>
+
             </span>
         </div>`
         );
@@ -50,7 +54,23 @@
     function sortlistASC() { sortlist(1); }
     function sortlistDESC() { sortlist(-1); }
 
+    var loaded = false;
+
+    function forceLoadAll() {
+
+        console.log('click load all')
+        $('.feed-load-more').click();
+        $('.feed-load-more').click();
+        $('.feed-load-more').click();
+
+        loaded = true;
+    }
+
     function sortlist(order) {
+
+        if ($('#WMECustomFeedSorterForceLoadAll').prop('checked')) { forceLoadAll(); }
+
+        //TODO: wait until 3x loaded (add promise ?)
 
         var items = $('.feed-list > li').get();
         items.sort(function (a, b) {

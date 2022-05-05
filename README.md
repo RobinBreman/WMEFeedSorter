@@ -14,7 +14,7 @@ https://greasyfork.org/en/scripts/427793-wme-feed-sorter
 |Version||
 |---|---|
 0.1.3 | Added button icons.
-0.1.2 | Fixed month sort (NL) 
+0.1.2 | Fixed month sort (NL)
 0.1.1 | Supporting years for really old UR's :(
 0.1.0 | Added support for EN
 0.0.5 | Fixed double button row
