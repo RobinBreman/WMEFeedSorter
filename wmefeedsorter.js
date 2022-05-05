@@ -9,12 +9,12 @@
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
 // @grant 			none
-// @version 		0.1.3
+// @version 		0.1.4
 // ==/UserScript==
 
 (function () {
     'use strict';
-    var version = '0.1.2';
+    var version = '0.1.4';
 
     function wmescript_bootstrap() {
         var wazeapi = W || window.W;
@@ -35,8 +35,7 @@
 
                 <button id='WMECustomFeedSorterUp'>🔼</button>
                 <button id='WMECustomFeedSorterDwn'>🔽</button>
-
-                <input type='checkbox' id='WMECustomFeedSorterForceLoadAll'>Always load all</input>
+                <input type='checkbox' checked id='WMECustomFeedSorterForceLoadAll'>Load more</input>
 
             </span>
         </div>`
@@ -54,21 +53,18 @@
     function sortlistASC() { sortlist(1); }
     function sortlistDESC() { sortlist(-1); }
 
-    var loaded = false;
-
     function forceLoadAll() {
-
-        console.log('click load all')
+        console.log('Load more')
         $('.feed-load-more').click();
-        $('.feed-load-more').click();
-        $('.feed-load-more').click();
-
-        loaded = true;
     }
 
     function sortlist(order) {
 
-        if ($('#WMECustomFeedSorterForceLoadAll').prop('checked')) { forceLoadAll(); }
+        if ($('#WMECustomFeedSorterForceLoadAll').prop('checked')) {
+            for (let index = 0; index < 3; index++) {
+                setTimeout(forceLoadAll, 1000);
+            }
+        }
 
         //TODO: wait until 3x loaded (add promise ?)
 
