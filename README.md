@@ -1,8 +1,11 @@
-# WME Feed Sorter
+# [Obsolete] WME Feed Sorter
 
 This script will add 2 buttons on top of the WME feed section that allows you to order the feed chronological
 
 * This script will only work for when your language is set to Dutch or English.
+
+## Obsolete
+This script is obsolete after a WME feed change
 
 ## Code
 Feel free to fork and improve this script I will be happy to accept any pull-requests.
